@@ -4,7 +4,7 @@ public:
         int maxans=0;
         int count=0;
         int left=0;
-        set<int> setnew;
+        // set<int> setnew;
 
         for(int right=0;right<nums.size();right++){
              
@@ -14,7 +14,7 @@ public:
                       if(nums[left]==0){
                           k++;
                       }
-                      setnew.erase(nums[left]);
+                    //   setnew.erase(nums[left]);
                       left++;
                   }
                 }
@@ -22,7 +22,7 @@ public:
                 k--;
                          
              }
-             setnew.insert(nums[right]);
+            //  setnew.insert(nums[right]);
              maxans= max(maxans, right-left+1);
             // cout<<left<<"--"<<right<<endl;
         }
